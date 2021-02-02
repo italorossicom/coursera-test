@@ -32,6 +32,7 @@ body {
   top: 0;
   float: left;
   background-color: #ff0000;
+  background-image: url(../images/25px/3.png);
   clear: left;
   
 }
@@ -42,7 +43,12 @@ body {
   top: 0;
   float: right;
   background-color: #ff0000;
-    clear: right;
+  background-image: url(../images/25px/3.png);
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  clear: right;
 
   
 }

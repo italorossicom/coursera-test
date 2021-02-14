@@ -103,7 +103,6 @@ function buildAndShowHomeHTML (categories) {
       // variable's name implies it expects.
       var chosenCategoryShortName = chooseRandomCategory(categories);
       // ITALOX: Cthe function returns the categories array pointing at a randomized index, it's an object and not just a string.
-      console.log(chosenCategoryShortName);
 
 
       // TODO: STEP 3: Substitute {{randomCategoryShortName}} in the home html snippet with the
@@ -119,11 +118,17 @@ function buildAndShowHomeHTML (categories) {
       //
       // var homeHtmlToInsertIntoMainPage = ....
 
+      randomCategoryShortName = "'" + chosenCategoryShortName.short_name + "'";
+
+      homeHtml = insertProperty(homeHtml, "randomCategoryShortName", randomCategoryShortName);
+      console.log(homeHtml);
+
 
       // TODO: STEP 4: Insert the the produced HTML in STEP 3 into the main page
       // Use the existing insertHtml function for that purpose. Look through this code for an example
       // of how to do that.
       // ....
+      insertHtml("#main-content", homeHtml);
 
     },
     false); // False here because we are getting just regular HTML from the server, so no need to process JSON.

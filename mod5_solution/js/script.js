@@ -102,7 +102,7 @@ function buildAndShowHomeHTML (categories) {
       // Pay attention to what type of data that function returns vs what the chosenCategoryShortName
       // variable's name implies it expects.
       var chosenCategoryShortName = chooseRandomCategory(categories);
-      // ITALO: Cthe function returns the categories array pointing at a randomized index, it's an object and not just a string.
+      // ITALOX: Cthe function returns the categories array pointing at a randomized index, it's an object and not just a string.
       console.log(chosenCategoryShortName);
 
 
